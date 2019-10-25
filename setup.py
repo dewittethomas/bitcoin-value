@@ -8,7 +8,7 @@ setuptools.setup(
     author_email="thomasdewittecontact@gmail.com",
 
     name='bitcoin_value',
-    version='1.0.1',
+    version='1.0.2',
     license="MIT",
     url='https://github.com/dewittethomas/bitcoin-value',
     python_requires='>= 2.7',
@@ -18,6 +18,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
 
     package_dir={"bitcoin_value": "bitcoin_value"},
+    install_requires=["requests>=2.22.0"],
     
     packages=setuptools.find_packages(),
 
