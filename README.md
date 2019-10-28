@@ -1,6 +1,6 @@
 # bitcoin-value
 
-[![npm](https://img.shields.io/pypi/v/bitcoin-value.svg)](https://pypi.org/project/bitcoin-value/)
+[![pypi](https://img.shields.io/pypi/v/bitcoin-value.svg)](https://pypi.org/project/bitcoin-value/)
 
 Gets the value of one bitcoin
 
