@@ -8,10 +8,10 @@ setuptools.setup(
     author_email="thomasdewittecontact@gmail.com",
 
     name='bitcoin_value',
-    version='1.0.3',
+    version='1.1.1',
     license="MIT",
     url='https://github.com/dewittethomas/bitcoin-value',
-    python_requires='>= 2.7',
+    python_requires='>= 3.5',
     
     description='Gets the value of one bitcoin',
     long_description=README,
@@ -25,16 +25,7 @@ setuptools.setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
-        'Operating System :: Microsoft :: Windows',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.0',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3'
     ]
 )
