@@ -8,7 +8,7 @@ setuptools.setup(
     author_email="thomasdewittecontact@gmail.com",
 
     name='bitcoin_value',
-    version='1.3.1',
+    version='1.3.2',
     license="MIT",
     url='https://github.com/dewittethomas/bitcoin-value',
     python_requires='>= 3.5',
