@@ -11,6 +11,3 @@ def USD():
 
 def GBP():
     return "£" + str(json_data['bpi']['GBP']['rate_float'])
-
-
-print(EUR())
