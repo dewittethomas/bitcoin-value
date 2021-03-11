@@ -1,4 +1,4 @@
-# nationality-predictor
+# bitcoin_value
 
 [![npm](https://img.shields.io/pypi/v/bitcoin-value.svg)](https://pypi.org/project/bitcoin-value/)
 
@@ -29,7 +29,7 @@ Currency: String ? The currency of the Bitcoin.
 Demo:
 
 ```python
-from nationality_predictor import predict
+from bitcoin_value import currency
 
 cur = currency("USD")
 ```
