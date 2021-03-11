@@ -1,13 +1,22 @@
 import requests
 
-res = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-json_data = res.json()
+class currency():
+    def __init__(self, currency=""):
 
-def EUR():
-    return "€" + str(json_data['bpi']['EUR']['rate_float'])
+        if currency != "":
+            self.currency = currency
+            self.url = f"https://api.coindesk.com/v1/bpi/currentprice/{self.currency}.json"
+        else:
+            raise ValueError("Currency is not defined.")
 
-def USD():
-    return "$" + str(json_data['bpi']['USD']['rate_float'])
+    def fetch(self):
 
-def GBP():
-    return "£" + str(json_data['bpi']['GBP']['rate_float'])
+        res = requests.get(self.url)
+      
+        if res.status_code == 404:
+            raise ValueError(f"Currency {self.currency} does not exist.")
+        elif res.status_code == 200:
+            data = res.json()
+            value = data["bpi"][f"{self.currency}"]["rate_float"]
+
+            return value

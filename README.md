@@ -1,39 +1,57 @@
-# bitcoin-value
+# nationality-predictor
 
-[![pypi](https://img.shields.io/pypi/v/bitcoin-value.svg)](https://pypi.org/project/bitcoin-value/)
+[![npm](https://img.shields.io/pypi/v/bitcoin-value.svg)](https://pypi.org/project/bitcoin-value/)
 
-Gets the value of one bitcoin
+A tracker that gets the latest value of Bitcoin in any currency.
 
 ## Installation
-To install the package run this command:
 
-```bash
+Run the following to install:
+
+```console
 pip install bitcoin-value
 ```
 
 ## Usage
 
-### EUR
+### Currency
 
 ```python
-import bitcoin_value as bitcoin
-
-bitcoin.EUR()
+currency()
 ```
 
-### USD
+Params:
+
+```
+Currency: String ? The currency of the Bitcoin.
+```
+
+Demo:
 
 ```python
-import bitcoin_value as bitcoin
+from nationality_predictor import predict
 
-bitcoin.USD()
+cur = currency("USD")
 ```
 
-
-### GBP
+### Fetch
 
 ```python
-import bitcoin_value as bitcoin
-
-bitcoin.GBP()
+currency.fetch()
 ```
+
+Result:
+
+```
+Currency: str()
+```
+
+Demo:
+
+```python
+result = currency("USD").fetch()
+print(result)
+```
+
+# License
+[MIT](https://github.com/dewittethomas/nationality-predictor/blob/master/LICENSE)

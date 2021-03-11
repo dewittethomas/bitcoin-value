@@ -1,3 +1,1 @@
-from .bitcoin_value import (
-  EUR, USD, GBP
-)
+from .bitcoin_value import currency
