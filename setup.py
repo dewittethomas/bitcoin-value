@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = "bitcoin_value",
-    version = "1.4.2",
+    version = "1.4.3",
     license = "MIT",
     url = "https://github.com/dewittethomas/bitcoin_value",
     
