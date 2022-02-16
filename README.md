@@ -202,5 +202,10 @@ from bitcoin_value import currency
 currency("USD")
 ```
 
+Result:
+```
+Currency: float()
+```
+
 # License
 [MIT](https://github.com/dewittethomas/nationality-predictor/blob/master/LICENSE)

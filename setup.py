@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = "bitcoin_value",
-    version = "1.5.1",
+    version = "1.5.2",
     author = "Thomas Dewitte",
     author_email = "thomasdewittecontact@gmail.com",
     license = "MIT",
