@@ -5,11 +5,11 @@ with open("README.md", "r") as fh:
 
 setup(
     name = "bitcoin_value",
-    version = "1.5.0",
+    version = "1.5.1",
     author = "Thomas Dewitte",
     author_email = "thomasdewittecontact@gmail.com",
     license = "MIT",
-    url = "https://github.com/dewittethomas/bitcoin_value",
+    url = "https://github.com/dewittethomas/bitcoin-value",
     
     description = "A tracker that gets the latest value of Bitcoin in any currency",
     long_description = long_description,
