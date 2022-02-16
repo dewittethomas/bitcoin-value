@@ -1,22 +1,18 @@
 import requests
 
-class currency():
-    def __init__(self, currency=""):
+def currency(currency=""):
+    if currency != "":
+        url = f"https://api.coindesk.com/v1/bpi/currentprice/{currency}.json"
 
-        if currency != "":
-            self.currency = currency
-            self.url = f"https://api.coindesk.com/v1/bpi/currentprice/{self.currency}.json"
-        else:
-            raise ValueError("Currency is not defined.")
+        req = requests.get(url)
 
-    def fetch(self):
+        if req.status_code == 404:
+            raise ValueError(f"Currency {currency} does not exist.")
+        elif req.status_code == 200:
+            result = req.json()
+            value = result["bpi"][f"{currency}"]["rate_float"]
 
-        res = requests.get(self.url)
-      
-        if res.status_code == 404:
-            raise ValueError(f"Currency {self.currency} does not exist.")
-        elif res.status_code == 200:
-            data = res.json()
-            value = data["bpi"][f"{self.currency}"]["rate_float"]
+            return float(value)
 
-            return value
+    else:
+        raise ValueError("Currency is not defined.")

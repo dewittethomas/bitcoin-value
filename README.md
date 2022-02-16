@@ -199,26 +199,7 @@ Demo:
 ```python
 from bitcoin_value import currency
 
-cur = currency("USD")
-```
-
-### Fetch
-
-```python
-currency.fetch()
-```
-
-Result:
-
-```
-Currency: str()
-```
-
-Demo:
-
-```python
-result = currency("USD").fetch()
-print(result)
+currency("USD")
 ```
 
 # License
