@@ -1,6 +1,6 @@
 import requests
 
-def currency(currency=""):
+def currency(currency: str = "") -> float:
     if currency != "":
         url = f"https://api.coindesk.com/v1/bpi/currentprice/{currency}.json"
 
